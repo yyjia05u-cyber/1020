@@ -1,0 +1,37 @@
+/* style.css */
+/* 重設 HTML 和 Body 的預設樣式，確保畫布能滿版 */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 隱藏捲軸，防止畫布超出範圍時出現 */
+}
+
+#menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px; /* 選單寬度 */
+  height: 100vh; /* 佔滿整個視窗高度 */
+  background-color: rgba(255, 255, 255, 0.8); /* 白色且 80% 不透明度 */
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+#menu-container ul {
+  list-style-type: none; /* 移除項目符號 */
+  padding: 0;
+  margin: 0;
+}
+
+#menu-container li a {
+  display: block;
+  color: #333; /* 深灰色文字 */
+  padding: 12px 16px;
+  text-decoration: none; /* 移除底線 */
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#menu-container li a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* 滑鼠懸停時的背景色 */
+}
